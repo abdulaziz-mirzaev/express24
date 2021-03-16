@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class LinkedList
 {
     private $nodes;
@@ -25,21 +27,5 @@ class LinkedList
     public function getNodes(): array
     {
         return $this->nodes;
-    }
-}
-
-class OutputList
-{
-    private $number;
-
-    public function __construct(int $number)
-    {
-        $this->number = $number;
-    }
-
-    public function getResult(): array
-    {
-        $array = str_split( (string)$this->number );
-        return array_reverse($array);
     }
 }

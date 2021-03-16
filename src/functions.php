@@ -1,4 +1,8 @@
 <?php
+
+use App\LinkedList;
+use App\OutputList;
+
 function dump(...$vars)
 {
     foreach ( $vars as $var ) {
